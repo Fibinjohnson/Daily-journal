@@ -1,0 +1,13 @@
+<%- include("partials/header"); -%>
+
+<h2>home</h2>
+<% for (var i = 0; i < homeContent.length; i++) { %>
+   <ul>
+    <li><h1><%= homeContent[i].postTitle %></h1>
+        <p><%= homeContent[i].postBody.slice(0,25)  %>.. <a href="/posts/<%= encodeURIComponent(homeContent[i].postTitle) %>">Read more</a>
+        </p></p></li>
+   </ul> 
+<% } %>
+
+
+<%- include("partials/footer"); -%>
