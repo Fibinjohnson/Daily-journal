@@ -1,2 +1,2 @@
-# Dily-journal
+# Daily-journal
 Journal app to read blogs
