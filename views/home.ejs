@@ -1,10 +1,11 @@
 <%- include("partials/header"); -%>
 
-<h2>home</h2>
+<h2>Home</h2><br>
+<p><%=homeDescription %></p>
 <% for (var i = 0; i < homeContent.length; i++) { %>
    <ul>
-    <li><h1><%= homeContent[i].postTitle %></h1>
-        <p><%= homeContent[i].postBody.slice(0,25)  %>.. <a href="/posts/<%= encodeURIComponent(homeContent[i].postTitle) %>">Read more</a>
+    <li><h1><%= homeContent[i].postDetails.postTitle %></h1>
+        <p><%= homeContent[i].postDetails.postBody.slice(0,25)  %>.. <a href="/posts/<%= homeContent[i]._id %>">Read more</a>
         </p></p></li>
    </ul> 
 <% } %>
